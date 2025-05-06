@@ -1,0 +1,23 @@
+Test Results for Data Daemon Application
+-----------------------------------------
+
+Test 1a - Store block: PASS
+Test 1b - Retrieve block: PASS
+    Retrieved: "Hello, World!"
+Test 2 - Duplicate store check: PASS
+Test 3a - Update with current version: PASS
+Test 3b - Retrieve after update: PASS
+    Retrieved: "Updated Data"
+Test 4 - Update with outdated version: PASS
+Test 5 - Partial read: PASS
+    Partial read: "Updat"
+Test 6 - Partial write: PASS
+    New block content: "Helloed Data"
+Test 7a - Associate alternative secret: PASS
+Test 7b - Partial read with alternative secret: PASS
+    Partial read with alt secret: "Hello"
+Test 7c - Remove alternative secret: PASS
+Test 7d - Access with removed alternative secret: FAIL
+Test 8 - Retrieval with wrong secret: PASS
+Test 9 - Retrieval of non-existing block: PASS
+Test 10 - Partial read out-of-range: PASS
